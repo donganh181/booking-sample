@@ -1,0 +1,15 @@
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\bin\Debug\net5.0\BookingSample.Data.deps.json
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\bin\Debug\net5.0\BookingSample.Data.runtimeconfig.json
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\bin\Debug\net5.0\BookingSample.Data.runtimeconfig.dev.json
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\bin\Debug\net5.0\BookingSample.Data.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\bin\Debug\net5.0\ref\BookingSample.Data.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\bin\Debug\net5.0\BookingSample.Data.pdb
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.csprojAssemblyReference.cache
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.AssemblyInfoInputs.cache
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.AssemblyInfo.cs
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.csproj.CoreCompileInputs.cache
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\ref\BookingSample.Data.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.pdb
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Data\obj\Debug\net5.0\BookingSample.Data.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\bin\Debug\net5.0\BookingSample.Business.deps.json
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\bin\Debug\net5.0\BookingSample.Business.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\bin\Debug\net5.0\ref\BookingSample.Business.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\bin\Debug\net5.0\BookingSample.Business.pdb
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\bin\Debug\net5.0\BookingSample.Data.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\bin\Debug\net5.0\BookingSample.Data.pdb
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.csprojAssemblyReference.cache
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.AssemblyInfoInputs.cache
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.AssemblyInfo.cs
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.csproj.CoreCompileInputs.cache
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.csproj.CopyComplete
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\ref\BookingSample.Business.dll
+D:\capstone\BookingSampleAPI\BookingSample\BookingSample.Business\obj\Debug\net5.0\BookingSample.Business.pdb
