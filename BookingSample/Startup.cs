@@ -59,7 +59,7 @@ namespace BookingSample
 
             app.UseCors(builder =>
             {
-                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
             });
 
             app.UseAuthentication();
