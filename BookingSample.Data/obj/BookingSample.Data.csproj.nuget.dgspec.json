@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\FPT\\Capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj": {}
+    "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj": {}
   },
   "projects": {
-    "E:\\FPT\\Capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj": {
+    "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\FPT\\Capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj",
+        "projectUniqueName": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj",
         "projectName": "BookingSample.Data",
-        "projectPath": "E:\\FPT\\Capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj",
-        "packagesPath": "C:\\Users\\thanh\\.nuget\\packages\\",
-        "outputPath": "E:\\FPT\\Capstone\\booking-sample\\BookingSample.Data\\obj\\",
+        "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
