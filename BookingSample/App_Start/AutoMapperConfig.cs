@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BookingSample.Data.AutoMapper;
 
 namespace BookingSample.API.App_Start
 {
@@ -13,7 +14,9 @@ namespace BookingSample.API.App_Start
         {
             var mappingConfig = new MapperConfiguration(mc =>
             {
-
+                mc.ConfigRouteModule();
+                mc.ConfigSeatModule();
+                mc.ConfigOrderBookingModule();
             });
             IMapper mapper = mappingConfig.CreateMapper();
             services.AddSingleton(mapper);

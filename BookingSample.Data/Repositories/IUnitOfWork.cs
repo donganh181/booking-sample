@@ -8,6 +8,9 @@ namespace BookingSample.Data.Repositories
 {
     public interface IUnitOfWork
     {
+        IRouteRepository RouteRepository { get; }
+        ISeatRepository SeatRepository { get; }
+        IOrderBookingRepository OrderBookingRepository { get; }
         void Save();
         Task SaveAsync();
     }

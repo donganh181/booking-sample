@@ -76,6 +76,10 @@ namespace BookingSample.Data.Context
                 entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
 
                 entity.Property(e => e.Name).HasMaxLength(255);
+
+                entity.Property(e => e.Status)
+                    .HasMaxLength(20)
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);
