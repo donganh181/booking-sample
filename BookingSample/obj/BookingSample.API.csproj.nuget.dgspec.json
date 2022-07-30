@@ -1,35 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample\\BookingSample.API.csproj": {}
+    "D:\\FPT\\capstone\\booking-sample\\BookingSample\\BookingSample.API.csproj": {}
   },
   "projects": {
-    "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Business\\BookingSample.Business.csproj": {
+    "D:\\FPT\\capstone\\booking-sample\\BookingSample.Business\\BookingSample.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Business\\BookingSample.Business.csproj",
+        "projectUniqueName": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Business\\BookingSample.Business.csproj",
         "projectName": "BookingSample.Business",
-        "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Business\\BookingSample.Business.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Business\\obj\\",
+        "projectPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Business\\BookingSample.Business.csproj",
+        "packagesPath": "C:\\Users\\phaml\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\phaml\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj": {
-                "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj"
+              "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj": {
+                "projectPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj"
               }
             }
           }
@@ -76,35 +74,30 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj": {
+    "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj",
+        "projectUniqueName": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj",
         "projectName": "BookingSample.Data",
-        "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\obj\\",
+        "projectPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj",
+        "packagesPath": "C:\\Users\\phaml\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\phaml\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -169,39 +162,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample\\BookingSample.API.csproj": {
+    "D:\\FPT\\capstone\\booking-sample\\BookingSample\\BookingSample.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample\\BookingSample.API.csproj",
+        "projectUniqueName": "D:\\FPT\\capstone\\booking-sample\\BookingSample\\BookingSample.API.csproj",
         "projectName": "BookingSample.API",
-        "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample\\BookingSample.API.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample\\obj\\",
+        "projectPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample\\BookingSample.API.csproj",
+        "packagesPath": "C:\\Users\\phaml\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\phaml\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Business\\BookingSample.Business.csproj": {
-                "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Business\\BookingSample.Business.csproj"
+              "D:\\FPT\\capstone\\booking-sample\\BookingSample.Business\\BookingSample.Business.csproj": {
+                "projectPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Business\\BookingSample.Business.csproj"
               },
-              "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj": {
-                "projectPath": "D:\\capstone\\BookingSampleAPI\\BookingSample\\BookingSample.Data\\BookingSample.Data.csproj"
+              "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj": {
+                "projectPath": "D:\\FPT\\capstone\\booking-sample\\BookingSample.Data\\BookingSample.Data.csproj"
               }
             }
           }
@@ -243,6 +234,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -251,7 +248,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

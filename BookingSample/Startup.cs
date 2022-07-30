@@ -16,6 +16,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BookingSample.Business.Hubs;
 
 namespace BookingSample
 {
@@ -37,11 +38,12 @@ namespace BookingSample
                 options.UseSqlServer(_configuration.GetConnectionString("DefaultConnection")));
 
             services.AddControllers();
-
+            
             services.ConfigureDI();
             services.AddSwaggerGenNewtonsoftSupport();
             services.ConfigureSwagger();
             services.AddCors();
+            services.AddSignalR();
             services.ConfigureFilter<ErrorHandlingFilter>();
         }
 
@@ -59,7 +61,11 @@ namespace BookingSample
 
             app.UseCors(builder =>
             {
-                builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+                builder.WithOrigins(
+                    "https://ve-tau-thuy.herokuapp.com",
+                    "http://localhost:3000",
+                    "https://tikap.cf:9930",
+                    "http://localhost:3001").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
             });
 
             app.UseAuthentication();
@@ -72,6 +78,7 @@ namespace BookingSample
             });
 
             app.ConfigureSwagger(provider);
+            app.UseEndpoints(routes => { routes.MapHub<SystemEventHub>("/signalr"); });
         }
     }
 }
