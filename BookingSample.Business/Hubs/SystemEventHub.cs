@@ -16,7 +16,8 @@ namespace BookingSample.Business.Hubs
             Console.WriteLine($"{webConnection.WebId} has joined {webConnection.RoomId}");
             await Clients.Group(webConnection.RoomId)
                 .SendAsync(WEB_CONNECTION_CHANNEL,
-                    SYSTEM_BOT, "Connected On System Success");
+                    SYSTEM_BOT, "Connect success à ok hieu r");
+           
         }
     }
 }

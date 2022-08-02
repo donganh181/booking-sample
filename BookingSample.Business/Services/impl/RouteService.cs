@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -24,6 +25,12 @@ namespace BookingSample.Business.Services.impl
         {
             var list = await _unitOfWork.RouteRepository.Get().OrderBy(r=>r.FromPlace).ProjectTo<RouteViewModel>(_mapper.ConfigurationProvider).ToListAsync();
             return list;
+        }
+        public async Task<RouteViewModel> GetById(Guid routeId)
+        {
+            var result = await _unitOfWork.RouteRepository.Get(r => r.Id.Equals(routeId))
+                .ProjectTo<RouteViewModel>(_mapper.ConfigurationProvider).FirstOrDefaultAsync();
+            return result;
         }
     }
 }
