@@ -10,6 +10,9 @@ namespace BookingSample.Data.AutoMapper
         {
             mc.CreateMap<OrderBooking, OrderBookingViewModel>();
             mc.CreateMap<OrderBookingViewModel, OrderBooking>();
+            
+            mc.CreateMap<OrderBooking, OrderBookingCreateViewModel>();
+            mc.CreateMap<OrderBookingCreateViewModel, OrderBooking>();
         }
     }
 }
