@@ -7,6 +7,7 @@ using BookingSample.Data.Responses;
 using BookingSample.Data.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+
 namespace BookingSample.Controllers
 {
     [Route("api/v{version:apiVersion}/orderBookings")]
@@ -17,9 +18,11 @@ namespace BookingSample.Controllers
         private readonly IOrderBookingService _orderBookingService;
         private readonly HttpClient client = new HttpClient();
         private readonly IConfiguration _configuration;
-        public OrderBookingController(IOrderBookingService orderBookingService)
+
+        public OrderBookingController(IOrderBookingService orderBookingService, IConfiguration configuration)
         {
             _orderBookingService = orderBookingService;
+            _configuration = configuration;
         }
 
         [HttpPost]
@@ -29,14 +32,15 @@ namespace BookingSample.Controllers
             var request = Request;
 
             var result = await _orderBookingService.Create(model);
-            return Ok(new SuccessResponse<List<OrderBookingViewModel>>((int)HttpStatusCode.OK,
+            return Ok(new SuccessResponse<List<OrderBookingViewModel>>((int) HttpStatusCode.OK,
                 "Create success.", result));
         }
+
         [HttpGet]
         [MapToApiVersion("1")]
-        public async Task Test(){
-            await client.GetAsync( _configuration.GetSection("KIOSK")["HOST"]+"/test");
+        public async Task Test()
+        {
+            await client.GetAsync(_configuration.GetSection("KIOSK")["HOST"] + "/test");
         }
     }
-   
 }
