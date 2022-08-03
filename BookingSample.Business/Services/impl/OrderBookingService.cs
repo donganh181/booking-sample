@@ -28,7 +28,8 @@ namespace BookingSample.Business.Services.impl
         private readonly HttpClient client = new HttpClient();
         private string Host;
 
-        public OrderBookingService(IMapper mapper, IUnitOfWork unitOfWork, IConfiguration configuration, IRouteService routeService,IHubContext<SystemEventHub> eventHub)
+        public OrderBookingService(IMapper mapper, IUnitOfWork unitOfWork, IConfiguration configuration,
+            IRouteService routeService, IHubContext<SystemEventHub> eventHub)
         {
             _mapper = mapper;
             _unitOfWork = unitOfWork;
@@ -51,22 +52,31 @@ namespace BookingSample.Business.Services.impl
         {
             var result = new List<OrderBookingViewModel>();
             var listOrder = new ListOrder();
-            var route = await _routeService.GetById(model.RouteId); 
+            var route = await _routeService.GetById(model.RouteId);
+            var time = TimeSpan.Parse(model.StringOnTime);
+
+            foreach (var seatId in model.SeatIds)
+            {
+                var check = await _unitOfWork.OrderBookingRepository.Get(o =>
+                    o.SeatId.Equals(seatId) && DateTime.Compare(model.OnDate, (DateTime) o.OnDate) == 0 &&
+                    TimeSpan.Compare(time, o.OnTime) == 0).FirstOrDefaultAsync();
+                if (check != null)
+                {
+                    throw new ErrorResponse((int) HttpStatusCode.BadRequest, "Đơn đã thanh toán");
+                }
+
+                var order = _mapper.Map<OrderBooking>(model);
+                order.SeatId = seatId;
+                order.OnTime = time;
+                await _unitOfWork.OrderBookingRepository.InsertAsync(order);
+
+                await _unitOfWork.SaveAsync();
+                result.Add(_mapper.Map<OrderBookingViewModel>(order));
+                listOrder.items.Add(new OrderDetail() {Id = order.Id, Price = (double) route.Price});
+            }
+
             try
             {
-                foreach (var seatId in model.SeatIds)
-                {
-                    var order = _mapper.Map<OrderBooking>(model);
-                    order.SeatId = seatId;
-                    order.OnTime = TimeSpan.Parse(model.StringOnTime);
-                    await _unitOfWork.OrderBookingRepository.InsertAsync(order);
-                    
-                    await _unitOfWork.SaveAsync();
-                    result.Add(_mapper.Map<OrderBookingViewModel>(order));
-                    listOrder.items.Add(new OrderDetail(){Id = order.Id, Price = (double) route.Price});
-                }
-                
-
                 var obj = new OrderKiosk()
                 {
                     OrderDetail = JsonConvert.SerializeObject(listOrder),
