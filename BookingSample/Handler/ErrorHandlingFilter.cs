@@ -15,6 +15,7 @@ namespace BookingSample.API.Handler
             if (context.Exception is System.Linq.Dynamic.Core.Exceptions.ParseException || context.Exception is ErrorResponse)
             {
                 string message = context.Exception.ToString();
+                Console.WriteLine(message);
                 if (context.Exception.GetType() == typeof(ErrorResponse)) message = ((ErrorResponse)context.Exception).Message;
                 context.Result = new ObjectResult(new ErrorResponse(((ErrorResponse)context.Exception).Code, message))
                 {
