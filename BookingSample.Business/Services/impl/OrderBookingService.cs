@@ -85,8 +85,8 @@ namespace BookingSample.Business.Services.impl
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
-                throw new ErrorResponse((int)HttpStatusCode.BadRequest,"Something wrong");
+                Console.WriteLine(e.Message);
+                throw new ErrorResponse((int)HttpStatusCode.BadRequest,e.Message);
             }
         }
     }
