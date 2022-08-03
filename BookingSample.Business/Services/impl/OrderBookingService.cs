@@ -83,8 +83,9 @@ namespace BookingSample.Business.Services.impl
                         SystemEventHub.SYSTEM_BOT, true);
                 return result;
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                Console.WriteLine(e);
                 throw new ErrorResponse((int)HttpStatusCode.BadRequest,"Something wrong");
             }
         }
