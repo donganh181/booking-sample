@@ -61,11 +61,10 @@ namespace BookingSample
 
             app.UseCors(builder =>
             {
-                builder.WithOrigins(
-                    "https://ve-tau-thuy.herokuapp.com",
-                    "http://localhost:3000",
-                    "https://tikap.cf:9930",
-                    "http://localhost:3001").AllowAnyMethod().AllowAnyHeader().AllowCredentials();
+                builder.AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .SetIsOriginAllowed((host) => true)
+                    .AllowCredentials();
             });
 
             app.UseAuthentication();
