@@ -71,9 +71,8 @@ namespace BookingSample.Business.Services.impl
                 await _unitOfWork.OrderBookingRepository.InsertAsync(order);
 
                 await _unitOfWork.SaveAsync();
-                await _eventHub.Clients.Group(model.KioskId.ToString().ToUpper())
-                    .SendAsync(SystemEventHub.WEB_BOOKING_CHANNEL,
-                        SystemEventHub.SYSTEM_BOT, true);
+                var hub = new SystemEventHub();
+                await hub.Booking(model.KioskId.ToString().ToUpper());
                 result.Add(_mapper.Map<OrderBookingViewModel>(order));
                 listOrder.items.Add(new OrderDetail() {Id = order.Id, Price = (double) route.Price});
             }

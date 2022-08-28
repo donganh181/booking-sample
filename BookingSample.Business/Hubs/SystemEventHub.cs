@@ -19,5 +19,19 @@ namespace BookingSample.Business.Hubs
                     SYSTEM_BOT, "Connect success à ok hieu r");
            
         }
+        public async Task Booking(string kioskId)
+        {
+            WebConnection webConnection = new WebConnection()
+            {
+                RoomId = kioskId,
+                WebId = kioskId
+            };
+            await Groups.AddToGroupAsync(Context.ConnectionId, webConnection.RoomId);
+            Console.WriteLine($"{webConnection.WebId} has joined {webConnection.RoomId}");
+            await Clients.Group(webConnection.RoomId)
+                .SendAsync(WEB_BOOKING_CHANNEL,
+                    SYSTEM_BOT, true);
+           
+        }
     }
 }
