@@ -64,13 +64,16 @@ namespace BookingSample.Business.Services.impl
                 {
                     throw new ErrorResponse((int) HttpStatusCode.BadRequest, "Đơn đã thanh toán");
                 }
-
+                
                 var order = _mapper.Map<OrderBooking>(model);
                 order.SeatId = seatId;
                 order.OnTime = time;
                 await _unitOfWork.OrderBookingRepository.InsertAsync(order);
 
                 await _unitOfWork.SaveAsync();
+                await _eventHub.Clients.Group(model.KioskId.ToString().ToUpper())
+                    .SendAsync(SystemEventHub.WEB_BOOKING_CHANNEL,
+                        SystemEventHub.SYSTEM_BOT, true);
                 result.Add(_mapper.Map<OrderBookingViewModel>(order));
                 listOrder.items.Add(new OrderDetail() {Id = order.Id, Price = (double) route.Price});
             }
@@ -88,9 +91,7 @@ namespace BookingSample.Business.Services.impl
                 var url = Host;
                 await client.PostAsync(url, data);
                 Console.WriteLine(model.KioskId);
-                await _eventHub.Clients.Group(model.KioskId.ToString().ToUpper())
-                    .SendAsync(SystemEventHub.WEB_BOOKING_CHANNEL,
-                        SystemEventHub.SYSTEM_BOT, true);
+                
                 return result;
             }
             catch (Exception e)
